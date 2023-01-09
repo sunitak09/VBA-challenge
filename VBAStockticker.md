@@ -40,7 +40,11 @@
           Yearly_change = 0
           Percent_change = 0
           TotalVolume = 0
-
+          
+          
+          'Calculations: Yearly change = Close price - open price
+          ' % change = (close price- open price/ open price)* 100
+          
            For Row_counter = 2 To Lastrow
 
               If ws.Cells(Row_counter + 1, 1).Value <> ws.Cells(Row_counter, 1).Value Then
